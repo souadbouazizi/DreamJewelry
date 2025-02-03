@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Jewelry</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#home"
+            ><img src="./images/logo.png" alt="Dream Jewelry"
+          /></a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#slideshow">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="./images/slide1.png" alt="Slide 1" />
+          <div class="caption">
+            <h1>Welcome to Dream Jewelry</h1>
+            <p style="text-shadow: none; color: #fff; font-size: 24px">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a
+              style="
+                text-shadow: none;
+                color: #fff;
+                font-size: 24px;
+                margin: 2rem auto 0;
+                border-radius: 0.5rem;
+                display: table;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: var(--primary-color);
+                padding: 1rem 1.5rem;
+              "
+              class="btn-caption"
+              href="#contact"
+              >contact us</a
+            >
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="./images/slide2.png" alt="Slide 2" />
+          <div class="caption">
+            <h1>Innovative Solutions</h1>
+            <p style="text-shadow: none; color: #fff; font-size: 24px">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a
+              class="btn-caption"
+              style="
+                text-shadow: none;
+                color: #fff;
+                font-size: 24px;
+                margin: 2rem auto 0;
+                border-radius: 0.5rem;
+                display: table;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: var(--primary-color);
+                padding: 1rem 1.5rem;
+              "
+              href="#contact"
+              >contact us</a
+            >
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="./images/slide3.png" alt="Slide 3" />
+          <div class="caption">
+            <h1>Contact Us for More Information</h1>
+            <p style="text-shadow: none; color: #fff; font-size: 24px">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a
+              class="btn-caption"
+              style="
+                text-shadow: none;
+                color: #fff;
+                font-size: 24px;
+                margin: 2rem auto 0;
+                border-radius: 0.5rem;
+                display: table;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: var(--primary-color);
+                padding: 1rem 1.5rem;
+              "
+              href="#contact"
+              >contact us</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="slideshow-dots">
+        <span class="dot" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>About <span class="title-color">Us</span></h2>
+          <p>
+            Welcome! to Dream Jewelry, a passionate web developer creating
+            engaging websites.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consequatur maiores deserunt vel recusandae voluptates quod?
+          </p>
+
+          <div id="hiddenContent" class="hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non amet,
+              eligendi, iste rerum ea quo corporis officiis autem dignissimos
+              quod vel. Assumenda nulla commodi aperiam voluptas omnis labore
+              magni eligendi!
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Explicabo numquam a incidunt accusantium, distinctio est
+              voluptatum ipsum voluptate quae, provident nihil natus dolor at
+              vel repudiandae nemo. Quidem suscipit nesciunt molestiae voluptas
+              commodi laboriosam nemo ut perspiciatis dolorem maxime! Aliquam
+              aut facilis esse exercitationem dolor!
+            </p>
+            <br />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              voluptatibus eligendi fuga laudantium debitis voluptates. Autem
+              enim itaque, voluptas distinctio, velit quas repellendus doloribus
+              nihil ipsum beatae possimus, voluptatibus pariatur officia quos.
+              Minima vitae blanditiis recusandae vero, quam impedit et obcaecati
+              quas animi deleniti voluptatum. Explicabo fuga similique rerum
+              ipsa.
+            </p>
+          </div>
+          <button id="readMoreBtn">Read More</button>
+        </div>
+        <div class="about-image">
+          <img src="./images/About-img.png" alt="About Me" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2><span class="title-color">Our</span> Services</h2>
+      <div class="services-container">
+        <button class="nav-arrow left-arrow">←</button>
+        <div class="services-wrapper">
+          <div class="service-box">
+            <img src="./images/serv1.png" alt="Service 2" />
+            <h3>Service 1</h3>
+            <p>Short description about Service 1.</p>
+            <div class="hidden-content hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                dolores laboriosam voluptatum nesciunt distinctio nemo ab,
+                eligendi provident officiis iste.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <div class="service-box">
+            <img src="./images/serv2.png" alt="Service 1" />
+            <h3>Service 2</h3>
+            <p>Short description about Service 2.</p>
+            <div class="hidden-content hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                dolores laboriosam voluptatum nesciunt distinctio nemo ab,
+                eligendi provident officiis iste.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <div class="service-box">
+            <img src="./images/serv3.png" alt="Service 1" />
+            <h3>Service 3</h3>
+            <p>Short description about Service 3.</p>
+            <div class="hidden-content hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                dolores laboriosam voluptatum nesciunt distinctio nemo ab,
+                eligendi provident officiis iste.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <div class="service-box">
+            <img src="./images/serv4.png" alt="Service 1" />
+            <h3>Service 4</h3>
+            <p>Short description about Service 4.</p>
+            <div class="hidden-content hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                dolores laboriosam voluptatum nesciunt distinctio nemo ab,
+                eligendi provident officiis iste.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <div class="service-box">
+            <img src="./images/serv5.png" alt="Service 1" />
+            <h3>Service 5</h3>
+            <p>Short description about Service 5.</p>
+            <div class="hidden-content hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                dolores laboriosam voluptatum nesciunt distinctio nemo ab,
+                eligendi provident officiis iste.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <div class="service-box">
+            <img src="./images/serv6.png" alt="Service 1" />
+            <h3>Service 6</h3>
+            <p>Short description about Service 6.</p>
+            <div class="hidden-content hidden">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                dolores laboriosam voluptatum nesciunt distinctio nemo ab,
+                eligendi provident officiis iste.
+              </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <!-- Repeat for other service boxes -->
+
+          <!-- Répétez pour les autres services -->
+        </div>
+        <button class="nav-arrow right-arrow">→</button>
+      </div>
+      <div class="dots-container"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2><span class="title-color">Our</span> Gallery</h2>
+      <div class="gallery-container">
+        <img
+          src="./images/gal1.png"
+          class="gallery-photo"
+          alt="Photo 1"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal2.png"
+          class="gallery-photo"
+          alt="Photo 2"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal3.png"
+          class="gallery-photo"
+          alt="Photo 3"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal4.png"
+          class="gallery-photo"
+          alt="Photo 4"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal5.png"
+          class="gallery-photo"
+          alt="Photo 5"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal6.png"
+          class="gallery-photo"
+          alt="Photo 6"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal7.png"
+          class="gallery-photo"
+          alt="Photo 7"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal8.png"
+          class="gallery-photo"
+          alt="Photo 8"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal9.png"
+          class="gallery-photo"
+          alt="Photo 9"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+
+        <img
+          src="./images/gal11.png"
+          class="gallery-photo"
+          alt="Photo 11"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal12.png"
+          class="gallery-photo"
+          alt="Photo 12"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+        <img
+          src="./images/gal10.png"
+          class="gallery-photo"
+          alt="Photo 10"
+          data-title="Photo Gallery Dream Jawlery"
+        />
+      </div>
+
+      <!-- Popup Container -->
+      <div class="popup hidden">
+        <span class="close">&times;</span>
+        <span class="arrow left-arrow2">&lt;</span>
+        <span class="arrow right-arrow2">&gt;</span>
+        <img class="popup-img" src="" alt="Popup Image" />
+        <p class="popup-title"></p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact <span class="title-color">Us</span></h2>
+      <div class="contact-container">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.468257979012!2d10.61521778335845!3d35.837520001726276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130275759ac9d10d%3A0x698e3915682cef7d!2sSousse!5e0!3m2!1sfr!2stn!4v1735738526426!5m2!1sfr!2stn"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <form class="newsletter-form">
+          <input type="email" placeholder="Subscribe to our Newsletter" />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <svg
+              width="24"
+              height="24"
+              fill="#d9ba76"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 6.25 7 13 7 13s7-6.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+              />
+            </svg>
+            <span>123 Avenue de Paris, France</span>
+          </div>
+          <div class="contact-item">
+            <svg
+              width="24"
+              height="24"
+              fill="#d9ba76"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1.4 3.25L12 13.01 5.4 7.25H18.6z"
+              />
+            </svg>
+            <span>email@example.com</span>
+          </div>
+          <div class="contact-item">
+            <svg
+              class="icon-phone"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#d9ba76"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.22 11.06 11.06 0 003.47.56 1 1 0 011 1v3.49a1 1 0 01-1 1A18.05 18.05 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.06 11.06 0 00.56 3.47 1 1 0 01-.21 1.11z"
+              ></path>
+            </svg>
+            <span>+123 456 789</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495V14.708H9.692v-3.59h3.128V8.413c0-3.1 1.893-4.785 4.656-4.785 1.325 0 2.463.099 2.796.143v3.24l-1.919.001c-1.505 0-1.796.716-1.796 1.765v2.315h3.588l-.467 3.59h-3.121V24h6.116c.731 0 1.324-.593 1.324-1.324V1.325C24 .593 23.407 0 22.675 0z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.559-3.594-1.559-2.717 0-4.917 2.201-4.917 4.917 0 .39.045.765.127 1.124C7.728 8.087 4.1 6.13 1.671 3.149c-.427.722-.666 1.561-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.624-.03-.927-.086.631 1.953 2.445 3.377 4.604 3.417-1.685 1.32-3.808 2.105-6.102 2.105-.396 0-.788-.023-1.175-.067 2.179 1.397 4.768 2.211 7.548 2.211 9.057 0 14.004-7.504 14.004-14.004 0-.213 0-.426-.016-.637.962-.694 1.8-1.562 2.46-2.549z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.33 3.608 1.304.975.975 1.241 2.243 1.304 3.608.058 1.265.068 1.645.068 4.849s-.01 3.584-.068 4.849c-.062 1.366-.33 2.633-1.304 3.608-.975.975-2.243 1.241-3.608 1.304-1.265.058-1.645.068-4.849.068s-3.584-.01-4.849-.068c-1.366-.062-2.633-.33-3.608-1.304-.975-.975-1.241-2.243-1.304-3.608-.058-1.265-.068-1.645-.068-4.849s.01-3.584.068-4.849c.062-1.366.33-2.633 1.304-3.608.975-.975 2.243-1.241 3.608-1.304 1.265-.058 1.645-.068 4.849-.068zm0-2.163c-3.259 0-3.667.014-4.947.072-1.485.066-2.985.369-4.052 1.436-1.066 1.066-1.37 2.566-1.436 4.052-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.066 1.485.369 2.985 1.436 4.052 1.066 1.066 2.566 1.37 4.052 1.436 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.485-.066 2.985-.369 4.052-1.436 1.066-1.066 1.37-2.566 1.436-4.052.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.066-1.485-.369-2.985-1.436-4.052-1.066-1.066-2.566-1.37-4.052-1.436-1.28-.058-1.688-.072-4.947-.072zm0 5.838a6.163 6.163 0 1 0 0 12.326 6.163 6.163 0 0 0 0-12.326zm0 10.163a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
